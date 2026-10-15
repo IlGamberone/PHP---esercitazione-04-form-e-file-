@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Autovetture</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>------------ Inserimento Auto ------------</h1>
+
+    <form action="invia.php" method="get">
+
+        <table>
+            <tr>
+                <th>Marca</th>
+                <td>
+                    <select name="marca" id="marca">
+                        <option value="Alfa Romeo">Alfa Romeo</option>
+                        <option value="Fiat">Fiat</option>
+                        <option value="Ford">Ford</option>
+                        <option value="Volkswagen">Volkswagen</option>
+                        <option value="Renault">Renault</option>
+                    </select>
+                </td>
+            </tr>
+            <tr>
+                <th>Modello</th>
+                <td>
+                    <input type="text" name="modello">
+                </td>
+            </tr>
+            <tr>
+                <th>Stato</th>
+                <td>
+                    <input type="radio" id="nuova" name="condizione" value="Nuova">Nuova
+                    <input type="radio" id="usata" name="condizione" value="Usata">Usata
+                </td>
+            </tr>
+            <tr>
+                <th>Anno Costruzione</th>
+                <td>
+                    <select name="anno">
+                        <option value="2007">2007</option>
+                        <option value="2008">2008</option>
+                        <option value="2009">2009</option>
+                        <option value="2010">2010</option>
+                        <option value="2011">2011</option>
+                        <option value="2012">2012</option>
+                        <option value="2013">2013</option>
+                        <option value="2014">2014</option>
+                        <option value="2015">2015</option>
+                    </select>
+                </td>
+            </tr>
+            <tr>
+                <th>Cilindrata</th>
+                <td>
+                    <input type="number" name="cilindrata">
+                </td>
+            </tr>
+            <tr>
+                <th>Cavalli</th>
+                <td>
+                    <input type="number" name="cavalli">
+                </td>
+            </tr>
+            <tr>
+                <th>Prezzo</th>
+                <td>
+                    <input type="number" name="prezzo"> €
+                </td>
+            </tr>
+            <tr>
+                <th>Targa</th>
+                <td>
+                    <input type="text" name="targa">
+                </td>
+            </tr>
+            <tr>
+                <th>Accessori</th>
+                <td>
+                    <input type="checkbox" name="accessori[]" value="Aria Condizionata"> Aria Condizionata
+                    <br>
+                    <input type="checkbox" name="accessori[]" value="Vernice Metalizzata"> Vernice Metalizzata
+                    <br>
+                    <input type="checkbox" name="accessori[]" value="Tetto in Cristallo"> Tetto in Cristallo
+                    <br>
+                    <input type="checkbox" name="accessori[]" value="Impianto Radio-CD"> Impianto Radio-CD
+                    <br>
+                </td>
+            </tr>
+            <tr>
+                <th>Descrizione Aggiuntiva</th>
+                <td>
+                    <textarea name="descrizioneAggiuntiva" style="width: 300px; height: 150px;"></textarea>
+                </td>
+            </tr>
+        </table>
+
+        <input type="submit" value="Invia">
+        <input type="reset" value="Cancella">
+
+    </form>
+</body>
+</html>
